@@ -52,7 +52,7 @@ class Comparison:
                     # Calculation similarity score
                     score = 1 - distance
                     # Writing similarity score to output_file
-                    output_f.write(f"{score}\n")
+                    output_f.write(f"{score:.3f}\n")
 
     def read_text_from_file(self, file_path: str) -> str:
         with open(file_path, 'r', encoding="utf8") as f:
