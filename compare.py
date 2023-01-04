@@ -46,7 +46,7 @@ class Comparison:
 
                     code_str_len = max(len(code1_str), len(code2_str))
 
-                    # Calculation Levenshtein distance between abstract syntax trees and normalization
+                    # Calculation Levenshtein distance between strings with code and normalization
                     distance = LevenshteinDistance.distance(code1_str, code2_str)
                     distance /= code_str_len
                     # Calculation similarity score
